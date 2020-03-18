@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guesser</title>
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+            font-family: sans-serif;
+        }
+        .container{
+            position: absolute;
+            right: 40%;
+            bottom: 50%;
+        }
+        .num-input{
+            border-radius: 12px;
+            border: 1.3px solid black;
+            width: 15em;
+            height: 1.5em;
+            padding: 3px 6px 3px 6px;
+            outline: none;
+        }
+        #check{
+            border-radius: 10px;
+            border: 2px solid black;
+            height: 2.2em;
+            width: 7em;
+            outline: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Number guesser...</h2>
+        <p>Guess a number between <span class="min-num"></span> and <span class="max-num"></span></p>
+        <div class="game">
+        <input type="text" class="num-input" placeholder="Enter your guess">
+        <input type="submit" id="check" value="Check">
+        </div>
+        <p class="message"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
